@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<head>
+    <wicket:link>
+    <link href="./style.css" rel="stylesheet" type="text/css" media="screen, projection" ></link>
+    </wicket:link>
+</head>
+
+
+<body>
+<div id="container">
+    <div id="header"></div>
+    <div id="content">
+        <div id="main"></div>
+        <div wicket:id="cheeses" class="cheese">
+            <h3 wicket:id="name"></h3>
+            <p wicket:id="description"></p>
+            <p>
+                <span wicket:id="price"></span>
+                <a wicket:id="add" href="#">add to cart</a>
+            </p>
+        </div>
+        <div wicket:id="navigator" ></div>
+
+        <div id="cart">
+            <!--Convert into Panel-->
+            <div wicket:id="shoppingcart"></div>
+
+
+          <!--  <h3>Your Selection</h3>
+            <table>
+                <tbody>
+                <tr wicket:id="cart">
+                    <td wicket:id="name"></td>
+                    <td wicket:id="price"></td>
+                    <td ><a wicket:id="remove" href="#">remove</a></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr class="total">
+                    <th>Total</th>
+                    <td wicket:id="total"></td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tfoot>
+            </table>-->
+        </div>
+        <input type="button"  value="Check Out" wicket:id="checkout">
+    </div>
+    <div wicket:id="group">
+        <blockquote wicket:id="dexter"></blockquote>
+        <blockquote wicket:id="deedee"></blockquote>
+    </div>
+    <a wicket:id="groupPage" href="#">Hide/Visible Group Page</a>
+
+
+
+   <!-- Reusable Components-->
+
+
+
+</div>
+</body>
+</html>
